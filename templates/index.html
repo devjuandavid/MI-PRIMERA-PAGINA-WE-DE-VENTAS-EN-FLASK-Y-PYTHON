@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ventas en linea</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <div class="menu container">
+           <a href="#" class="logo">TIENDA DE VENTAS </a>
+           <input type="checkbox" id="menu" />
+           <label for="menu">
+            <img src="{{ url_for('static', filename='ImagenesVenta/menu.png') }}" class="menu-icono" alt="menu">
+           </label>
+           <nav class="navbar">
+               <ul>
+                   <li><a href="#">CONTACTOS</a></li>
+                   <li><a href="#">63171544</a></li>
+                   <li><a href="#">-</a></li>
+                   <li><a href="#">72547069</a></li>
+               </ul>
+           </nav>
+           <div>
+               <ul>
+                   <li class="submenu">
+                       <img src="{{ url_for('static', filename='ImagenesVenta/car.svg') }}" id="img-carrito" alt="carrito">
+                       <div id="carrito">
+                           <table id="lista-carrito">
+                               <thead>
+                                   <tr>
+                                       <th>Imagen</th>
+                                       <th>Nombre</th>
+                                       <th>Precio</th>
+                                       <th></th>
+                                   </tr>
+                               </thead>
+                           </table>
+                       </div>
+                   </li>
+               </ul>
+           </div>
+        </div>
+        <div class="header-content container">
+            <div class="header-img">
+                <img src="{{ url_for('static', filename='ImagenesVenta/PRINCIPAL.png') }}" alt="">
+            </div>
+            <div class="header-txt">
+                <h1>Ofertas especiales</h1>
+                <p>La mejor decoración de iluminación RGB y entretenimiento para tu hogar </p>
+                <a href="#" class="btn-1">LUCES RGB</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="ofert container">
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="{{ url_for('static', filename='ImagenesVenta/iluminacion.jpg') }}" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 1</h3>
+                <a href="#" class="btn-2">CINTAS LED RGB</a>
+            </div>
+        </div>
+        
+        <div class="ofert-1">
+            <div class="ofert-img">
+                <img src="{{ url_for('static', filename='ImagenesVenta/3Dlamparas.jpg') }}" alt="">
+            </div>
+            <div class="ofert-txt">
+                <h3>Producto 2</h3>
+                <a href="#" class="btn-2">LAMPARAS 3D RGB</a>
+            </div>
+        </div> 
+    </section>
+
+    <main class="products container" id="lista-1">
+        <h2>Productos de cintas led y Lamparas RGB</h2>
+        <div class="product-content">
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro1.jpeg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Simple</p>
+                    <p class="precio">85Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="1">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <!-- Aquí agregué más productos como ejemplo -->
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro2.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">120Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro4.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 10 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">155Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro5.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">120Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro2.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">120Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro4.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 10 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">155Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro2.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">120Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro4.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 10 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">155Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro2.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">120Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro4.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 10 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">155Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro2.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 5 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">120Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="2">Agregar al carrito</a>
+                </div>
+            </div>
+
+            <div class="product">
+                <img src="{{ url_for('static', filename='ImagenesVenta/Pro4.jpg') }}" alt="">
+                <div class="product-txt">
+                    <h3>Led rgb bluetooth 10 metros</h3>
+                    <p>Completo</p>
+                    <p class="precio">155Bs</p>
+                    <a href="#" class="agregar-carrito btn-2" data-id="3">Agregar al carrito</a>
+                </div>
+            </div>
+            <!-- Agrega más productos con el mismo formato según sea necesario -->
+        </div>
+    </main>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

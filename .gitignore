@@ -1,0 +1,8 @@
+# Ignorar la carpeta de Codeium
+.codeium/
+
+# Ignorar otras carpetas o archivos innecesarios
+.android/
+.cache/
+.vscode/
+.env
